@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Layout</title>
+</head>
+<body>
+	<section>
+		<header class="flex between item-center">
+			<a class="brand" href="#">Heroes</a>
+			<ul class="navigation flex">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;">Characters</a></li>
+				<li><a href="#" style="--i:3;">Movies</a></li>
+				<li><a href="#" style="--i:4;">Games</a></li>
+				<li><a href="#" style="--i:5;">More</a></li>
+			</ul>
+			<div id="ID" class="toggle" onclick="toggleMenu();"></div>
+		</header>
+		<div class="container flex">
+			<div class="box" style="--i:1;">
+				<div class="imgBox">
+					<img src="image/img1.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:2;">
+				<div class="imgBox">
+					<img src="image/img2.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:3;">
+				<div class="imgBox">
+					<img src="image/img3.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBox">
+					<img src="image/img4.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer flex">			
+			<div class="sci">
+				<a href="#" style="--i:1">FaceBook</a>
+				<a href="#" style="--i:2">Twitter</a>
+				<a href="#" style="--i:3">Instagram</a>
+			</div>												
+			<p>Online Tutorials. 2020</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		var imgBox = document.querySelectorAll('.imgBox');
+		imgBox.forEach(popup => popup.addEventListener('click', () => {
+			popup.classList.toggle('active');
+		}));
+		function toggleMenu() {
+			const toggle = document.querySelector('.toggle');
+			const nav = document.querySelector('.navigation');
+			nav.classList.toggle('active');
+			toggle.classList.toggle('active');
+		}		
+	</script>
+</body>
+</html>

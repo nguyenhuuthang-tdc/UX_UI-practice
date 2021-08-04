@@ -1,0 +1,24 @@
+.flex {
+	display: flex;
+}
+.justify-center {
+	justify-content: center;
+}
+.item-center {
+	align-items: center;
+}
+.between {
+	justify-content: space-between;
+}
+.btn {
+	position: relative;
+	padding: 0.7rem 2.4rem;
+	font-family: var(--body-font);
+	font-size: 1rem;
+	font-weight: 600;
+	background: var(--first-color);
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+}

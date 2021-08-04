@@ -1,0 +1,480 @@
+@import 'extra.css';
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+/* VARIABLES CSS */
+:root {
+	--first-color : #4070F4;
+	--second-color :  #111;
+	--body-font: 'Poppins', sans-serif;
+	--big-font-size: 3rem;
+	--sbig-font-size: 2.3rem;
+	--nbig-font-size: 1.6rem;
+	--large-font-size: 1.3rem;
+	--normal-font-size: 0.938rem;
+	--z-back: -10;
+	--z-normal : 1;
+	--z-fixed: 100;
+	--mb-mg: 1rem;
+	--pc-mg: 2rem;
+}
+/* BASE */
+*,::before,::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: var(--body-font);
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: var(--second-color);
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+section {
+	margin-bottom: 10rem;
+}
+.section_title {
+	position: relative;
+	font-size: var(--sbig-font-size);
+	color: var(--first-color);
+	text-align: center;
+}
+/* LAYOUT */
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	box-shadow: 0 3px 12px -6px black;
+	z-index: var(--z-fixed);
+}
+.header nav {
+	position: relative;
+	margin: var(--mb-mg) var(--mb-mg);
+}
+.header nav .nav-logo {
+	position: relative;
+	color: var(--second-color);
+	font-weight: 600;
+	font-size: var(--large-font-size);
+}
+.header nav .nav-menu {
+	position: relative;
+	right: 60px;
+	opacity: 1;
+	visibility: visible;
+}
+.header nav .nav-menu li a {
+	position: relative;
+	margin: 0 20px;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.header nav .nav-menu li a:hover:after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--first-color);
+	border-radius: 20%;
+	opacity: 1;
+	transition: 0.3s;
+}
+.actives:after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--first-color);
+	border-radius: 20%;
+	opacity: 1;
+	transition: 0.3s;
+}
+.header nav .nav-toggle {
+	position: absolute;
+	top : 0;
+	right: 0;
+	font-size: var(--nbig-font-size);
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	z-index: var(--z-fixed);
+}
+main {
+	position: relative;
+	margin: var(--mb-mg) var(--mb-mg);
+	top: 90px;
+}
+main .home{
+	position: relative;
+	width: 100%;
+}
+main .home .info{
+	margin-bottom: 2rem;
+}
+main .home .info .home_title{
+	position: relative;
+	font-size: var(--sbig-font-size);	
+	z-index: var(--z-back);
+}
+main .home .info span {
+	color: var(--first-color);
+}
+main .home .link_info {
+	position: relative;
+	top: 30px;
+	flex-direction: column;
+	font-size:  var(--nbig-font-size);
+}
+main .home button {
+	transition: 0.4s;
+	cursor: pointer;
+}
+main .home button:hover {	
+	box-shadow: 3px 3px 10px -1px black;
+}
+main .home .link_info i {
+	margin: 15px 0;
+	transition: 0.3s;
+}
+main .home .link_info i:hover {
+	color: var(--first-color);
+}
+main .home .home_img {
+	position: absolute;
+	width: 290px;
+	right: 0;
+	bottom: -115px;
+	z-index: var(--z-back);
+}
+main .about {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+main .about .about_title {
+	position: relative;
+	font-size: var(--sbig-font-size);
+	color: var(--first-color);
+	margin: 1.5rem 0;
+
+}
+main .about .about_title:after {
+	position: absolute;
+    content: "";
+    width: 6.2rem;
+    left: 0;
+    right: 0;
+    top: 3.2rem;
+    background: var(--first-color);
+    height: .3rem;
+    margin: 0px auto;
+}
+main .about .about_img {
+	display: inline-block;
+}
+main .about .about_img img {
+	width: 300px;
+	border-radius: 10px;
+}
+main .about .about_name {
+	font-size: var(--nbig-font-size);
+	margin: 1rem 0;
+}
+main .skills {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+main .skills .skill_title{
+	position: relative;
+	font-size: var(--sbig-font-size);
+	color: var(--first-color);
+	margin: 1.5rem 0;
+}
+main .skills .skill_title:after {
+	position: absolute;
+    content: "";
+    width: 6.2rem;
+    left: 0;
+    right: 0;
+    top: 3.2rem;
+    background: var(--first-color);
+    height: .3rem;
+    margin: 0px auto;
+}
+main .skills .skill_sub_title{
+	font-size: var(--nbig-font-size);
+	margin: 1rem 0;
+}
+.skill_container p {
+	margin-bottom: 2rem;
+}
+.skill_container .skill_data {
+	position: relative;
+	width: 100%;
+	margin: 2rem 0;
+	padding: .7rem 1rem;
+	box-shadow: -1px 4px 29px -11px black;
+	border-radius: 10px;
+}
+.skill_data .skill_info .skill-icon {
+	font-size: var(--nbig-font-size);	
+	color: var(--first-color);
+	padding-right: 1.2rem;
+}
+.skill_container .skill_data span {
+	font-size: var(--normal-font-size);
+	font-weight: 600;
+}
+.skill_data .percent {
+	position: absolute;
+	right: 0.8rem;
+}
+.skill_data .skill_bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: .25rem;
+	background: var(--first-color);
+	border-radius: 10px;
+}
+.skill_img {
+	position: relative;
+	width: 100%;
+}
+.skill_img img {
+	border-radius: 10px;
+}
+.html {
+	width: 90%;
+}
+.css {
+	width: 85%;
+}
+.dtb {
+	width: 54%;
+}
+.design {
+	width: 35%;
+}
+main .works {	
+	text-align: center;
+}
+main .works .work_title {
+	position: relative;
+	font-size: var(--sbig-font-size);
+	color: var(--first-color);
+	margin: 1.5rem 0;
+}
+main .works .work_title:after {
+	position: absolute;
+    content: "";
+    width: 6.2rem;
+    left: 0;
+    right: 0;
+    top: 3.2rem;
+    background: var(--first-color);
+    height: .3rem;
+    margin: 0px auto;
+}
+main .works .work_img {
+	position: relative;
+	width: 100%;
+	margin-bottom: 1rem;
+	overflow: hidden;	
+	border-radius: .5rem;
+	box-shadow: 2px 0px 18px #111;
+}
+main .works .work_img img {
+	border-radius: 10px;
+	transition: 0.7s;
+	cursor: pointer;
+}
+main .works .work_img:hover img {
+	transform: scale(1.1);
+}
+main .contact {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+main .contact .contact_title {
+	position: relative;
+	font-size: var(--sbig-font-size);
+	color: var(--first-color);
+	margin: 1.5rem 0;
+}
+main .contact .contact_title:after {
+	position: absolute;
+    content: "";
+    width: 8.5rem;
+    left: 0;
+    right: 0;
+    top: 3.2rem;
+    background: var(--first-color);
+    height: .3rem;
+    margin: 0px auto;
+}
+main .contact .contact_input {
+	width: 100%;
+	font-size: var(--normal-font-size);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: 1.5px solid #000;
+	margin-bottom: .8rem;
+}
+main .contact .contact_btn {
+	display: block;
+	border: none;
+	outline: none;
+	font-size: var(--normal-font-size);
+	cursor: pointer;
+	margin:0px auto;
+}
+.footer {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 2rem 0;
+}
+.footer_title {
+	font-size: 2rem;
+	margin-bottom: .5rem;
+}
+.footer_social {
+	margin-bottom: .5rem;
+}
+.footer_social i {
+	margin: 0 .7rem;
+}
+@media screen and (min-width: 1024px) {
+	nav,section {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+@media screen and (min-width: 672px) {
+	body {
+		margin: 0;
+	}
+	section {
+	margin-bottom: 10rem;
+	}
+	main .home {
+		height: 100vh;		
+	}
+	main .home .link_info {
+		flex-direction: row;
+	}
+	main .home .link_info i {
+		margin-right: 2.5rem;
+		margin-bottom: 0;
+	}
+	main .home .home_img{
+		width: 457px;
+		bottom: 35%;
+	}
+	main .about {
+		margin-top: -100px;
+	}
+	.container_about {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.about_img {	
+		flex-basis: 50%;		
+	}
+	.about_img img {
+		display: inline-block;	
+	}
+	.container_about .about_text {
+		flex-basis: 50%;
+		text-align: left;
+	}
+	.skill_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#data, .skill_img {
+		margin-left: 1rem;
+		flex-basis: 50%;
+	}
+	.skill_img img {
+		display: inline-block;
+	}
+	.work_container {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+		column-gap: 2rem;
+	}
+	.work-img img {
+		display: inline-block;
+	}
+	.contact_form {
+		width: 360px;
+		margin: 0px auto;
+	}
+}
+/* MOBILE DEVICE */
+@media screen and (max-width: 768px){
+	.header nav .nav-toggle{
+		opacity: 1;
+		visibility: visible;
+	}
+	.header nav .nav-menu{
+		position: fixed;
+		top: 0;
+		right: -220px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s ease-in-out;
+		background: #fff;
+		z-index: var(--z-fixed);
+	}
+	.header nav .nav-menu li {
+		margin: 1rem 2rem;
+	}
+	.header nav .nav-menu.active{
+		transform: translateX(-220px);
+	}
+}
+/* ANIMATIONS */
+@keyframes slideFade {
+	0%{
+		opacity: 0;		
+	}
+	100%{
+		opacity: 1;		
+	}
+}
+@keyframes slideRight {
+	0%{
+		opacity: 0;		
+	}
+	100%{
+		opacity: 1;		
+	}
+}

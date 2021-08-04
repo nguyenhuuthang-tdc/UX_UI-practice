@@ -1,0 +1,121 @@
+@import "extra.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.circle {
+    position: fixed;
+    top: 160px;
+    right: -440px;
+    width: 1200px;
+    height: 1200px;
+    background-color: #017143;
+    border-radius: 50%;
+    z-index: 1;
+    transition: .5s;
+}
+.container {
+    position: relative;
+    z-index : 100;
+    padding: 20px 80px;
+}
+.header ul {
+    list-style: none;
+}
+.header ul li {
+    margin: 0 25px;
+}
+.header ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.body {
+    position: relative;
+    width: 100%;
+}
+.body .content {
+    position: relative;
+    max-width: 600px;
+}
+.body .content h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+.body .content h2 span {
+    font-size: 60px;
+    font-weight: 800;
+    color: #017143;
+}
+.body .content p {
+    font-weight: 400;
+}
+.imgBox {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    transition: .5s;
+}
+.imgBox img {
+    max-width: 320px;
+    transition: .5s;
+}
+.body .content a {
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #017143;
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contact{
+    position: absolute;
+    top:35%;
+    right: 10px;
+    height: 300px;
+    z-index: 100;
+}
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.contact ul li  {
+    margin: 5px 0;
+}
+.contact ul li a img {
+    transform: scale(0.6);
+    filter: invert(1);
+}
+ .thumb {
+    position:absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+ .thumb li {
+    margin:0 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 60px;
+}

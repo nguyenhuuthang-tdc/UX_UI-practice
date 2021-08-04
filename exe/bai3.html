@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/css/bai3.css">
+    <title>Layout</title>
+</head>
+<body>
+    <div class="navbar flex between item-center">
+        <div class="brand">
+            <img src="public/image/logo.png" alt="" width="150">
+        </div>
+        <ul class="flex justify-center item-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>        
+    </div>
+    <div class="main">
+        <div class="img-name">
+            <img src="public/image/name.png" alt="" width="250">
+        </div>
+        <ul class="flex">
+            <li><a href="#">2020</a></li>
+            <li><a class="active" href="#">12+</a></li>
+            <li><a href="#">1h 55 min</a></li>
+            <li><a href="#">Action</a></li>
+        </ul>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae lobortis nulla. Mauris feugiat, metus ac sollicitudin lobortis, lacus elit consectetur urna, id tristique mauris
+                 neque in lacus. Aenean hendrerit arcu ut tellus cursus luctus.
+                  Integer sed lectus ac nibh semper placerat sit amet id mauris.</p>            
+        </div>
+        <div class="button">
+            <button class="play"><i class="fa fa-play" aria-hidden="true"></i>PLAY</button>
+            <button class="list"><i class="fa fa-plus" aria-hidden="true"></i>MY LIST</button>
+        </div>
+    </div>
+    <div class="trailer flex justify-center item-center">
+        <img src="public/image/play.png" alt="" width="40">
+        <p>WATCH TRAILER</p>
+    </div>
+    <div class="video">
+        <video id="clip" src="public/image/trailer.mp4" controls preload="auto"></video>
+        <img class="close" src="public/image/close.png" alt="" width="30">
+    </div>
+</body>
+<script>
+    let video = document.querySelector(".video");
+    let trailer_btn = document.querySelector(".trailer"); 
+    let close = document.querySelector(".close"); 
+    //
+    trailer_btn.onclick = () => {
+        video.style.display = "flex";
+        document.getElementById("clip").play();
+    }
+    close.onclick = () => {
+        video.style.display = "none";
+        document.getElementById("clip").pause();
+    }
+</script>
+</html>

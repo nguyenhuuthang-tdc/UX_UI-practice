@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 100px;
+}
+.flex {
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.between {
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0px 10px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.navbar .search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    backdrop-filter: blur(5px);
+}
+.navbar .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    padding: 0px 10px 0 40px;
+}
+.navbar .search input::placeholder {
+    color: #fff;
+}
+.navbar .search i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #fff;
+}
+.navbar .search i::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #dedede;
+    top: 50%;
+    transform: translateY(-50%);
+    right:-9px;
+}
+.main {
+    width: 100%;
+    margin-top: 100px;
+    color: #fff;
+}
+.main ul {
+    list-style: none;
+}
+.main ul li {
+    position: relative;
+    padding: 0px 10px;
+}
+.main ul li:nth-child(1) {
+    padding-left: 0px;
+}
+.main ul li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 18px;
+    background-color: gray;
+}
+.main ul li:nth-child(4)::before {
+    width: 0px;
+}
+.main ul li a {
+    text-decoration: none;
+    color: #dedede;
+}
+.main ul li a.active {
+    background-color: #df0715;
+    padding: 0px 5px;
+    border-radius: 3px;
+}
+.main .content {
+    margin-top: 5px;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    font-size: 15px;
+}
+.button {
+    margin-top: 10px;
+}
+.button button {
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.button button i {
+    margin-right: 5px;
+}
+.button .play {
+    background-color: #ca0612;
+}
+.button .list {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    transition: .5s;
+}
+.button .list:hover {
+    background: #ca0612;
+}
+.trailer {
+    margin-top: 80px;
+    color:#fff;
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+}
+.trailer img {
+    margin-right: 10px;
+}
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+.video video {
+    max-width: 900px;
+    outline: none;
+}
+.video .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+/* responsive */
+/* mobile */
+@media screen and (max-width: 1032px){
+    .navbar {
+        flex-direction: column;       
+    }  
+    .navbar ul {
+        margin:20px 0;
+    }  
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trailer {
+        margin: 50px auto;
+    }
+    .main .content {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 989px){ 
+    .video video {
+        width: 100%;
+        height: 100%;
+        padding: 30px 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .main .content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 582px){ 
+    body {
+        padding: 20px 20px;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }  
+    .navbar ul li {
+        margin: 10px;
+    } 
+}
