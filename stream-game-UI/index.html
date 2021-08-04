@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Flex Layout</title>
+</head>
+<body>
+    <div class="menu-left">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/logo.svg" alt="">
+                </div>
+                <ion-icon class="menu-button" name="menu-outline"></ion-icon>             
+            </div>
+            <div class="category-game">
+                <div class="category-content">
+                    <p>Category</p>
+                </div>
+                <ul class="all-category">
+                    <li>
+                        <input type="checkbox" id="survial">
+                        <label for="survial">Survial</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tactic">
+                        <label for="tactic">Tactic</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="act">
+                        <label for="act">Act</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu-navbar">
+        <div class="nav-browser">
+            <ion-icon class="compass" name="compass-outline"></ion-icon>
+            <span>Browser</span>
+        </div>
+        <div class="nav-search">
+            <ion-icon class="glass" name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search Everything">
+        </div>
+        <div class="nav-user-manager">
+            <div class="user-add">
+                <ion-icon class="add" name="add-circle-outline"></ion-icon>
+            </div>
+            <div class="user-noti">
+                <ion-icon class="noti" name="notifications-outline"></ion-icon>
+            </div>
+            <div class="user-image">
+                <img src="https://ui8-unity-gaming.herokuapp.com/img/avatar.png" alt="">
+            </div>            
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="category-name">Action</div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/card-pic-1.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Tam Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Call of Duty</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>4.2k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/card-pic-2.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Duyen Hoang</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Garena Of Valor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.1k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/card-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thien Pham</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Call of Duty</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>3.9k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/player-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thang Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Free Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.5k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/player-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thang Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Free Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.5k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/player-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thang Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Free Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.5k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/player-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thang Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Free Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.5k watching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ui8-unity-gaming.herokuapp.com/img/player-pic-3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p>2020 World Champs Gaming Warzone</p>
+                </div>
+                <div class="card-user">
+                    <div class="card-user-image">
+                        <img src="https://ui8-unity-gaming.herokuapp.com/img/ava-1.png" alt="">
+                    </div>
+                    <div class="card-user-content">
+                        <div class="card-user-name">
+                            <p>Thang Tran</p>
+                            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="game-name">
+                            <p>Free Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="card-live">
+                        <ion-icon class="wifi" name="wifi"></ion-icon>
+                        <p>Live</p>
+                    </div>
+                    <div class="card-watching">
+                        <ion-icon class="dot" name="ellipse"></ion-icon>
+                        <p>1.5k watching</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
