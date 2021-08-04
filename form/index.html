@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layout</title>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="form-login">
+				<button id="btn"></button>
+				<button id="loginbtn" type="button" class="toggle-btn">Login</button>
+				<button id="registerbtn" type="button" class="toggle-btn">Register</button>
+			</div>
+			<form id="login" class="form-input">
+				<input type="text" name="userid" class="input-field" placeholder="User ID" required>
+				<input type="text" name="userpass" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" name="checkbox" class="check-box"><span>Remember your account</span>
+				<button type="submit" class="submit-btn">Login</button>
+			</form>
+
+			<form id="register" class="form-input">
+				<input type="text" name="userid" class="input-field" placeholder="User ID" required>
+				<input type="text" name="useremail" class="input-field" placeholder="User Email" required>
+				<input type="text" name="userpass" class="input-field" placeholder="Enter password" required>
+				<input type="checkbox" name="checkbox" class="check-box"><span>I agree to accept</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+			const btn = document.getElementById('btn');
+			const loginbtn = document.getElementById('loginbtn');
+			const registerbtn = document.getElementById('registerbtn');
+			const login = document.getElementById('login');
+			const register = document.getElementById('register');
+			registerbtn.onclick = () => {
+				btn.style.left = "110px";
+				login.style.left = "-400px";
+				register.style.left = "15px";
+			}
+			loginbtn.onclick = () => {
+				btn.style.left = "0px";
+				login.style.left = "15px";
+				register.style.left = "400px";
+			}
+		</script>
+	</div>
+</body>
+</html>
